@@ -24,13 +24,17 @@ public class Calculadora {
 		return a-b;
 	}
 	
-	public double mediaArray(List lista){
+	public double mediaArray(double[] array){
+		double m1 = 0;
 		
-		for (int obj : lista) {
+		for (double obj : array) {
+		
+			m1 = m1 + obj;	
 			
 		}
 		
-		return media;
+		double total = m1 / array.length;
+		return total;
 		
 	}
 }
